@@ -1,0 +1,8 @@
+mixin widget-small(items)
+
+  each item in items
+    div.widget-small
+      div.widget-small__box.widget-small__box_ico(class=item[0].mod)
+      div.widget-small__box.widget-small__box_data
+        span.widget-small__title(class=item[0].titleMod)= item[0].title
+        span.widget-small__value()= item[0].value

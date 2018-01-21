@@ -1,0 +1,25 @@
+.header-breadcrumbs
+  display: flex
+
+.header-breadcrumbs__item
+  display: block
+  font-size: rem(16)
+  font-family: $open_sansbold
+  line-height: lh(20, 16)
+  color: #4f4f4f
+  cursor: pointer
+
+.header-breadcrumbs__item_active
+  color: #442a9d
+
+.header-breadcrumbs__ico
+  position: relative
+  display: block
+  padding: 0 25px
+
+  &:after
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translateY(-50%) translateX(-50%)
+    +fa-sprite($fa-var-chevron-right, #4f4f4f, 14)

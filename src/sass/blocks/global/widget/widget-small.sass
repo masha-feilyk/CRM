@@ -1,0 +1,65 @@
+.widget-small
+  display: flex
+  margin-bottom: 23px
+  border-radius: 6px
+  background-color: #fff
+  box-shadow: 1px 2px 7px 0 rgba(136, 156, 176, .1)
+  overflow: hidden
+
+  &:last-child
+    margin-bottom: 0
+
+
+.widget-small__box
+  display: block
+
+.widget-small__box_ico
+  position: relative
+  width: 140px
+
+  &:after
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translateY(-50%) translateX(-50%)
+
+
+.widget-small__box_ico_cube
+  background-color: #ffc12d
+
+  &:after
+    +fa-sprite($fa-var-cube, #fff, 45)
+
+
+.widget-small__box_ico_database
+  background-color: #442a9d
+
+  &:after
+    +fa-sprite($fa-var-database, #fff, 45)
+
+
+.widget-small__box_data
+  flex: 1
+  padding: 29px 10px
+  text-align: center
+
+.widget-small__title
+  display: block
+  margin-bottom: 5px
+  font-size: rem(16)
+  line-height: lh(22, 16)
+  font-family: $open_sansregular
+  text-transform: uppercase
+
+.widget-small__title_violet
+  color: #442a9d
+
+.widget-small__title_yellow
+  color: #ffc12d
+
+.widget-small__value
+  display: block
+  font-size: rem(37)
+  line-height: lh(40, 37)
+  font-family: $open_sansbold
+  color: #4f4f4f

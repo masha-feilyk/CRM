@@ -1,0 +1,126 @@
+.about-list
+  display: block
+  margin: 0 -15px
+  +clear
+
+.about-item-holder
+  position: relative
+  float: left
+  width: calc(100% / 3)
+  padding: 0 15px
+  box-sizing: border-box
+
+  &.mod-shipping
+
+    .about-item
+
+      &:after
+        content: ''
+        right: -27px
+        border-color: transparent transparent transparent #d9bf8f
+
+
+  &.mod-returns
+
+    .about-description
+      padding-left: 75px
+
+    .about-item
+      background: #000
+
+      &:after
+        content: ''
+        left: 0
+        border-color: transparent transparent transparent #fff
+
+      &:before
+        content: ''
+        right: 0
+        border-color: transparent #fff transparent transparent
+
+
+  &.mod-support
+
+    .about-item
+
+      &:before
+        content: ''
+        left: -27px
+        border-color: transparent #d9bf8f transparent transparent
+
+
+.about-item
+  position: relative
+  display: block
+  width: 100%
+  padding: 23px 10px 19px 15px
+  background: #d9bf8f
+  box-sizing: border-box
+
+  &:after
+    position: absolute
+    top: 0
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 50px 0 50px 27px
+
+  &:before
+    position: absolute
+    top: 0
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 50px 27px 50px 0
+
+
+.about-ico
+  position: absolute
+  top: 50%
+  left: 31px
+  transform: translateY(-50%)
+  width: 40px
+  height: 40px
+
+  &:after
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translateX(-50%) translateY(-50%)
+
+  &.mod-shipping
+
+    &:after
+      +fa-sprite($fa-var-plane, #fff, 48)
+
+
+  &.mod-returns
+    left: 40px
+
+    &:after
+      +fa-sprite($fa-var-clock-o, #fff, 48)
+
+  &.mod-support
+
+    &:after
+      +fa-sprite($fa-var-life-ring, #fff, 48)
+
+
+.about-description
+  display: block
+  padding-left: 86px
+
+.about-description-title
+  display: block
+  margin-bottom: 9px
+  font-size: rem(30)
+  line-height: lh(32, 30)
+  font-family: $open_sansbold
+  color: #ffffff
+
+.about-description-text
+  display: block
+  font-size: rem(14)
+  line-height: lh(18, 14)
+  font-family: $open_sansregular
+  color: #ffffff

@@ -1,0 +1,37 @@
+include ../form/value
+
+div.information
+
+  div.information__img
+    img(src="https://picsum.photos/100")
+
+  div.information__data
+
+    div.information__box.information__box_about
+      div.information-about
+        div.information-about__description
+          span.information-about__title Max Jones
+          span.information-about__badge Gold
+        span.information-about__text Sales & Marketing
+
+      div.information-social
+        span.information-social__title Invite to social
+        ul.information-social__list
+          li.information-social__item
+            a.information-social__link.information-social__link_linkedin(href="#")
+          li.information-social__item
+            a.information-social__link.information-social__link_facebook(href="#")
+          li.information-social__item
+            a.information-social__link.information-social__link_twitter(href="#")
+
+    div.information__box.information__box_contact
+      div.information-contact
+        ul.information-contact__list
+          li.information-contact__item
+            +field-value('(+31) 140 175 468', 'Phone')
+          li.information-contact__item
+            +field-value('maxjones@gmail.com', 'Email')
+          li.information-contact__item
+            +field-value('Binnenweg 50, Rotterdam', 'Address')
+
+      button.information-contact__btn Create quote

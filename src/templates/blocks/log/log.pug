@@ -1,0 +1,50 @@
+include mixin/main
+
+div.log
+
+  div.log__title Activity
+
+  ul.log__list
+    li.log__item
+      span.log__box.log__box_img
+        span.log__img
+          img(src="https://picsum.photos/100")
+      span.log__box.log__box_data
+        +log([
+          [{text: 'Added new task', href: '#', link: '‘Remind customer to complete payment’'}],
+          [{text: 'assigned to Lauren'}]
+        ])
+        span.log__date Today at 4:24 PM
+
+    li.log__item
+      span.log__box.log__box_img
+        span.log__img
+          img(src="https://picsum.photos/200")
+      span.log__box.log__box_data
+        +log([
+          [{text: 'Added new upsell suggestion', href: '#', link: 'Upsell in Customer Support Interactions'}]
+        ])
+        span.log__date July 21th
+
+
+    li.log__item
+      span.log__box.log__box_img
+        span.log__img
+          img(src="https://picsum.photos/300")
+      span.log__box.log__box_data
+        +log([
+          [{text: 'Edited', href: '#', link: '‘Order #54789B’'}]
+        ])
+        span.log__date July 21th
+
+
+    li.log__item
+      span.log__box.log__box_img
+        span.log__img
+          img(src="https://picsum.photos/150")
+      span.log__box.log__box_data
+        +log([
+          [{text: 'Changed', href: '#', link: 'Invoice Address'}],
+          [{text: 'for', href: '#', link: 'Order #47893N'}]
+        ])
+        span.log__date June 23rd

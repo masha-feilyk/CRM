@@ -1,0 +1,6 @@
+mixin list(items)
+
+  each item in items
+    li.menu__item
+      a.menu__link(href=item[0].href, class=item[0].mod)
+        span.menu__text(class=item[0].textMod)= item[0].text
