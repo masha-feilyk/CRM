@@ -1,0 +1,11 @@
+include mixin/main
+
+div.navigation
+  div.navigation__menu
+    +navigation([
+      [{href: '#', mod: 'navigation__link_active', title: 'Overview'}],
+      [{href: '#', mod: '', title: 'Orders'}],
+      [{href: '#', mod: '', title: 'Payments'}],
+      [{href: '#', mod: '', title: 'Interactions'}],
+      [{href: '#', mod: '', title: 'Customer Feedback'}]
+    ])

@@ -1,0 +1,58 @@
+.field
+  position: relative
+  display: flex
+
+.field__value
+  position: relative
+  display: block
+  padding: 30px 30px 5px 0
+  width: 100%
+  color: #442a9d
+  font-size: rem(14)
+  line-height: lh(20,14)
+  font-family: $open_sansbold
+  outline: none
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  border: 0
+  background: none
+  border-bottom: 1px solid transparent
+  transition: border-bottom-color .3s ease
+
+  &:focus,
+  &:hover
+    border-bottom-color: rgba(71,71,71,.2)
+
+    .field__ico
+      opacity: 1
+      visibility: visible
+
+
+.field__ico
+  opacity: 0
+  visibility: hidden
+  position: absolute
+  bottom: 8px
+  right: 0
+  width: 15px
+  height: 15px
+  cursor: pointer
+
+  &:after
+    +fa-sprite($fa-var-pencil, #d4d4d4, 16)
+
+
+.field__label
+  font-family: $open_sansbold
+  font-size: rem(14)
+  line-height: lh(20,14)
+  color: #999999
+  letter-spacing: ls(50)
+  text-transform: uppercase
+
+.field__label_data
+  position: absolute
+  left: -1px
+  bottom: 30px
+  transform: scale(.9)

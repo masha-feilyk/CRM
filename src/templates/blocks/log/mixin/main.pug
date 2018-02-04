@@ -1,0 +1,9 @@
+mixin log(items)
+
+  span.log__description
+    each item in items
+      if item[0].text
+        span.log__text()= item[0].text
+
+      if item[0].link
+        a.log__link(href=item[0].href)= item[0].link

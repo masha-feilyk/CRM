@@ -1,0 +1,82 @@
+.menu__logo
+  display: block
+  padding: 46px 27px 41px
+
+.menu__list
+  display: block
+
+.menu__item
+  display: block
+
+.menu__link
+  position: relative
+  display: block
+  padding: 0 20px
+  transition: background-color .3s ease
+
+  &:hover
+    background-color: #442a9d
+
+  &:after
+    position: absolute
+    top: 0
+    left: 0
+    width: 5px
+    height: 100%
+    background-color: #ffc12d
+
+
+.menu__link_active
+  background-color: #442a9d
+
+  &:after
+    content: ''
+
+
+.menu__text
+  position: relative
+  display: block
+  padding: 20px 0 16px 47px
+  font-size: rem(18)
+  line-height: lh(30, 18)
+  color: #fff
+  font-family: $open_sanslight
+  border-bottom: 1px solid #3d444d
+
+  &:after
+    position: absolute
+    left: 5px
+
+  &.menu__text_tachometer
+
+    &:after
+      top: 22px
+      +fa-sprite($fa-var-tachometer, #fff, 24)
+
+
+  &.menu__text_pie-chart
+
+    &:after
+      top: 22px
+      +fa-sprite($fa-var-pie-chart, #fff, 23)
+
+
+  &.menu__text_briefcase
+
+    &:after
+      top: 23px
+      +fa-sprite($fa-var-briefcase, #fff, 23)
+
+
+  &.menu__text_calendar
+
+    &:after
+      top: 24px
+      +fa-sprite($fa-var-calendar, #fff, 23)
+
+
+  &.menu__text_tasks
+
+    &:after
+      top: 25px
+      +fa-sprite($fa-var-tasks, #fff, 23)

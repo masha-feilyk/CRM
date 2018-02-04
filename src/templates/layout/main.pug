@@ -1,0 +1,26 @@
+doctype html
+head
+  meta(charset="utf-8")
+  meta(name="viewport" content="width=device-width, initial-scale=1")
+
+  // Styles
+  link(rel="stylesheet" href="css/manifest.css" type='text/css')
+  <!-- inject:css -->
+  <!-- endinject -->
+
+body
+
+  div.content
+    div.content__aside
+      include ../blocks/aside/menu
+
+    div.content__data
+      include ../blocks/header/header
+      block content
+
+  script(src="js/fonts.js")
+  script(src="js/vendor.js")
+  script(src="js/application.js")
+  <!-- inject:js -->
+  <!-- endinject -->
+  script(src="https://use.fontawesome.com/884fcdae47.js" defer)

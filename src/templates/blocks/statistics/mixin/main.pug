@@ -1,0 +1,6 @@
+mixin statistics(items)
+
+  each item in items
+    li.statistic__item
+      span.statistic__title()= item[0].title
+      span.statistic__value()= item[0].value

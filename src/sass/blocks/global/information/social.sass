@@ -1,0 +1,50 @@
+.information-social
+  display: block
+
+.information-social__title
+  display: block
+  margin-bottom: 10px
+  font-size: rem(12)
+  line-height: lh(14, 12)
+  letter-spacing: ls(50)
+  font-family: $open_sansbold
+  color: rgb(153, 153, 153)
+  text-transform: uppercase
+
+.information-social__list
+  display: flex
+
+.information-social__item
+  display: block
+  width: 22px
+  height: 22px
+  margin-right: 25px
+
+  &:last-child
+    margin-right: 0
+
+
+.information-social__link
+  position: relative
+  display: block
+
+  &:after
+    position: absolute
+    top: 0
+    left: 0
+
+.information-social__link_linkedin
+
+  &:after
+    +fa-sprite($fa-var-linkedin, #1985bd, 22)
+
+.information-social__link_facebook
+
+  &:after
+    +fa-sprite($fa-var-facebook-official, #064c76, 22)
+
+
+.information-social__link_twitter
+
+  &:after
+    +fa-sprite($fa-var-twitter, #2caae1, 22)

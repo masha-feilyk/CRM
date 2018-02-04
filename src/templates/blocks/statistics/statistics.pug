@@ -1,0 +1,10 @@
+include mixin/main
+
+div.statistics
+
+  ul.statistic__list
+    +statistics([
+      [{title: 'Open tickets', value: '1'}],
+      [{title: 'Upsell suggestions', value: '2'}],
+      [{title: 'Open payments', value: '0'}]
+    ])

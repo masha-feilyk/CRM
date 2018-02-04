@@ -1,0 +1,14 @@
+include mixin/list
+
+div.menu
+  div.menu__logo
+    img(src="../images/blocks/logo-crm.png")
+
+  ul.menu__list
+    +list([
+      [{href: '#', mod: '', textMod: 'menu__text_tachometer', text: 'Dashboard'}],
+      [{href: '#', mod: '', textMod: 'menu__text_pie-chart', text: 'Reports'}],
+      [{href: '#', mod: ' menu__link_active', textMod: 'menu__text_briefcase', text: 'Customers'}],
+      [{href: '#', mod: '', textMod: 'menu__text_calendar', text: 'Calendar'}],
+      [{href: '#', mod: '', textMod: 'menu__text_tasks', text: 'Tasks'}]
+    ])

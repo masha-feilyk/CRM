@@ -1,0 +1,6 @@
+mixin navigation(items)
+
+  ul.navigation__list
+    each item in items
+      li.navigation__item
+        a.navigation__link(href=item[0].href, class=item[0].mod)= item[0].title

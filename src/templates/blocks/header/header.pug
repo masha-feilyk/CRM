@@ -1,0 +1,27 @@
+include mixin/action-list
+
+header.header
+
+  div.header__box
+    div.header-breadcrumbs
+      a.header-breadcrumbs__item Customers
+      i.header-breadcrumbs__ico
+      a.header-breadcrumbs__item.header-breadcrumbs__item_active Max Jones
+
+  div.header__box
+    div.header-search
+      label.header-search__field
+        input.header-search__input(placeholder="Search")
+
+    div.header-actions
+      span.header-actions__btn
+        i.header-actions__ico.header-actions__ico_email
+        span.header-actions__notification 1
+      span.header-actions__btn
+        i.header-actions__ico.header-actions__ico_notification
+        span.header-actions__notification 4
+
+    div.header-user
+      div.header-user__img
+        img(src="http://picsum.photos/60")
+      div.header-user__name Hello Lauren
